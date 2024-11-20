@@ -3260,7 +3260,7 @@ MonoBehaviour:
   DrawFrom: {fileID: 434512437}
   DrawTo: {fileID: 2105755331}
   adjustHeight: 0.4
-  shotForce: 15
+  shotForce: 12
   trajectoryDisp: 15
   strengthForce: 1.5
   trajectoryResolution: 30

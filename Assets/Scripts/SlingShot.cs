@@ -208,13 +208,13 @@ public class SlingShot : MonoBehaviour
             // Determine the overlap distance for raycasting
             overlap = Vector3.Distance(position, nextPosition) * 0.9f;
 
-            // Check for collisions
-            if (Physics.Raycast(position, velocity.normalized, out RaycastHit hit, overlap))
-            {
-                trajectoryLine.positionCount = i + 1; // Adjust the line's point count to stop here
-                trajectoryLine.SetPosition(i, hit.point); // Add the hit point to the trajectory
-                return; // Stop drawing the trajectory
-            }
+            // // Check for collisions
+            // if (Physics.Raycast(position, velocity.normalized, out RaycastHit hit, overlap))
+            // {
+            //     trajectoryLine.positionCount = i + 1; // Adjust the line's point count to stop here
+            //     trajectoryLine.SetPosition(i, hit.point); // Add the hit point to the trajectory
+            //     return; // Stop drawing the trajectory
+            // }
 
             // If no collision, continue rendering the trajectory
             position = nextPosition;
